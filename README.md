@@ -4,6 +4,9 @@
 The app is designed for **Android phones and future smartwatch integration**, helping users optimize energy, focus, and well-being.
 
 ---
+Backend: https://pulsebrew-production.up.railway.app/
+
+---
 
 ## 🚀 Features
 
