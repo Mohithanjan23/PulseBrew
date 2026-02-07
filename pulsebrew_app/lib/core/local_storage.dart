@@ -1,17 +1,11 @@
-import 'package:sqflite/sqflite.dart';
+class LocalStorage {
+  final Map<String, dynamic> _cache = {};
 
-class LocalDB {
-  static Future<Database> open() async {
-    return openDatabase("pulsebrew.db", version: 1,
-      onCreate: (db, _) {
-        db.execute("""
-        CREATE TABLE biometrics(
-          ts INTEGER,
-          hr REAL,
-          hrv REAL,
-          stress REAL
-        )
-        """);
-      });
+  void save(String key, dynamic value) {
+    _cache[key] = value;
+  }
+
+  dynamic read(String key) {
+    return _cache[key];
   }
 }

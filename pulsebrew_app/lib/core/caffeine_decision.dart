@@ -1,15 +1,10 @@
-enum CaffeineDecision {
-  allow,
-  delay,
-  block,
-}
+class CaffeineDecision {
+  final bool drinkCoffee;
 
-class CaffeineResult {
-  final CaffeineDecision decision;
-  final String message;
+  CaffeineDecision(this.drinkCoffee);
 
-  const CaffeineResult({
-    required this.decision,
-    required this.message,
-  });
+  factory CaffeineDecision.fromVitals(Map<String, dynamic> vitals) {
+    final heartRate = vitals["heartRate"] ?? 0;
+    return CaffeineDecision(heartRate < 90);
+  }
 }

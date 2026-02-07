@@ -1,4 +1,4 @@
-package com.example.pulsebrew_app
+package com.pulsebrew.app
 
 import io.flutter.embedding.android.FlutterActivity
 

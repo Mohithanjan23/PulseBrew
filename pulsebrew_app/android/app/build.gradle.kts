@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.pulsebrew.app"
-        minSdk = 26
+        minSdk = 21
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
@@ -21,6 +21,8 @@ android {
             useLegacyPackaging = true
         }
     }
+
+    ndkVersion = "27.0.12077973"
 }
 
 
