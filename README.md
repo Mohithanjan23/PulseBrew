@@ -5,6 +5,9 @@
 **Architecture**: Flutter (Android) + FastAPI (Railway) + Supabase (Sync) + SQFlite (Offline).
 
 ---
+Backend: https://pulsebrew-production.up.railway.app/
+
+---
 
 ## 🚀 Features
 
